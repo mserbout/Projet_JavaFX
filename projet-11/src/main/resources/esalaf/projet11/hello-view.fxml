@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esalaf.projet11.HelloController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="421.0" styleClass="left-form" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="344.0" fitWidth="338.0" layoutX="42.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1602cc91338d421bb471a2689ba4dfae_auto_x2.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="418.0" layoutY="5.0" prefHeight="600.0" prefWidth="422.0" styleClass="right-form" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="151.0" layoutX="142.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="424.0" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="141.2">
+                     <image>
+                        <Image url="@images/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="167.0" layoutY="210.0" text="Sign In" textFill="#3c755d">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_username" layoutX="109.0" layoutY="266.0" onAction="#login" prefHeight="32.0" prefWidth="220.0" promptText="User Name" styleClass="textfield" stylesheets="@style.css" />
+                  <PasswordField fx:id="txt_password" layoutX="109.0" layoutY="312.0" onAction="#login" prefHeight="32.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@style.css" />
+                  <Button fx:id="btn_login" layoutX="167.0" layoutY="363.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="103.0" styleClass="login-btn" stylesheets="@style.css" text="Login" />
+                  <Button fx:id="close" layoutX="143.0" layoutY="403.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="41.0" styleClass="close" stylesheets="@style.css" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="close">
+                           <image>
+                              <Image url="@images/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
